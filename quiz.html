@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1 style="color: black;">Quiz App</h1>
+        </header>   
+        <main>
+            <div id="dashboard">
+                <img src="/img/925915639s.png" alt="">
+                <h2 style="color: blueviolet;">Hello user!</h2>
+                <span style="font-size: 22px; color: rgb(31, 31, 255);">Select category >></span>
+                <br> <br>
+                <div class="option">
+                    <input type="radio" name="question" id="op1">Programming 
+                    <input type="radio" name="question" id="op2">Politics 
+                    <input type="radio" name="question" id="op3">Physics 
+                    <input type="radio" name="question" id="op4">Chemistry 
+                </div>
+                <br>
+                <span>Enter your name</span>
+                <form class="user-form-dashboard">
+                    <div class="username-dashboard">
+                        <input type="text" id="username" name="username" placeholder="Enter your name">
+                    </div>
+                    <button id="start-quiz-btn" style="background-color: rgb(51, 51, 252);">Start Quiz</button>
+                </form>
+                <br>
+            </div>
+            <div id="quiz-container" style="display: none;">
+                <h2>Quiz</h2>
+                <form id="quiz-form">
+                    <div id="question"></div>
+                    <div id="options"></div>
+                    <button id="next-question-btn" disabled>Next</button>
+                </form>
+            </div>
+
+            <div id="score-board" style="display: none;">
+                <h2 style="color: blue;">Score Board</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="score-board-body"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
